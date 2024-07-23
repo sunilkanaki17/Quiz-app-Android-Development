@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".questionslistActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvquestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Which country does the flag belongs to?"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <ImageView
+            android:id="@+id/ivimages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_flag_of_argentina"
+            android:padding="16dp"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="6dp">
+
+            <ProgressBar
+                android:id="@+id/p_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0">
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                tools:text="0/10"
+                android:textSize="20sp"
+                android:gravity="center"></TextView>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvoptionsone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Srajana"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvoptionstwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Srajana"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvoptionsthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Srajana"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvoptionsfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Srajana"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="6dp"
+            android:textSize="20sp"
+            android:background="@drawable/default_option_button">
+        </Button>
+    </LinearLayout>
+
+</ScrollView>
